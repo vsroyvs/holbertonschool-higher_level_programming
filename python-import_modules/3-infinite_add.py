@@ -5,4 +5,4 @@ if __name__ == "__main__":
     suma = 0 
     for i in range(count - 1):
         suma = suma + int(sys.argv[i + 1])
-    print("{}".format(suma))
+    print("{:d}".format(suma))
