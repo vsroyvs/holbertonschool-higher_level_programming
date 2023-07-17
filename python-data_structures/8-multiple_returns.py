@@ -4,6 +4,6 @@ def multiple_returns(sentence):
     if count > 0:
         f_c = sentence[0]
     else:
-        return (None)
+        f_c = "None"
     tupla = (count, f_c)
     return (tupla)
