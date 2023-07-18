@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    nm = matrix[:]
-    for row in range(len(matrix)):
-        for column in range(len(matrix)):
-            nm[row][column] = matrix[row][column] * matrix[row][column]
+    nm = matrix.copy()
+    for i in range(len(matrix)):
+        nm[i] = list(map(lambda x: x**2,matrix[i]))
     return nm
