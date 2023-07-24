@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # 0-add_integer.py
 """ Define an addition between two integers"""
 
 
-def add_integer(a, b= 98):
+def add_integer(a, b=98):
     """Retruns the integer addition of a and b
     If args are float these must be to casted to integers
     Raises:
