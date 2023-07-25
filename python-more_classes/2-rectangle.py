@@ -42,8 +42,12 @@ class Rectangle:
 
     def area(self):
         """This public instance method returns the area of the rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return (self.__width * self.__height)
 
     def perimeter(self):
         """This public instance method returns perimeter of the rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return (self.__width*2 + 2*self.__height)
