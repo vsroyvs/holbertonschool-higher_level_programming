@@ -6,11 +6,11 @@ class Rectangle:
     """This is a class Rectangle
 
         Attributes:
-            number_rectangles (int): number of Rectangle instances.
+            number_of_instances (int): number of Rectangle instances.
 
     """
 
-    number_rectangles = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """This is a Constructor.
@@ -18,7 +18,7 @@ class Rectangle:
             width: of Rectangle
             height: of Rectangle
         """
-        Rectangle.number_rectangles += 1
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -80,5 +80,5 @@ class Rectangle:
 
     def __del__(self):
         """Print a message when each Rectangle is deleted"""
-        Rectangle.number_rectangles -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
