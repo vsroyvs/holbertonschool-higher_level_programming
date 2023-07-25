@@ -70,6 +70,6 @@ class Rectangle:
         rectangle += ", " + str(self.__height) + ")"
         return rectangle
 
-    del __del__(self):
+    def __del__(self):
         """Print a message when each Rectangle is deleted"""
         print("Bye rectangle...")
