@@ -4,6 +4,6 @@
 
 def read_file(filename=""):
     """ Print the contents of a UTF8 text"""
-    with open(filename, 'r') as archive:
+    with open(filename, encoding="utf-8") as archive:
         content = archive.read()
-    print(content)
+    print(content, end="")
