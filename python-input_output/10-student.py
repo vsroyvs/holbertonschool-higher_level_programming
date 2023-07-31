@@ -21,9 +21,9 @@ class Student:
         """Get a dictionary representation of the Student.
         If attrs is a list of strings, represent only those attributes
         Args:
-            Attrs (list) : 
+            Attrs (list) :
         """
         if (type(attrs) == list and
                 all(type(element) == str for element in attrs)):
-            return {k: getattrs(self, k) for k in attrs if hasattr(self, k)}
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
