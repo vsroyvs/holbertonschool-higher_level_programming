@@ -17,6 +17,7 @@ if __name__ == '__main__':
             "SELECT id, name FROM states\
             WHERE name = '{}'\
             ORDER By id".format(sys.argv[4]))
-    print(cursor.fetchone())
+    for state in cursor.fetchall():
+        print(state)
     cursor.close()
     db_connection.close()
