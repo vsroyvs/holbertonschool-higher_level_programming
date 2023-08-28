@@ -13,7 +13,10 @@ if __name__ == '__main__':
             port=3306
             )
     cursor = db_connection.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
+    cursor.execute(
+            "SELECT * FROM states \
+            WHERE name LIKE BINARY 'N%' \
+            ORDER BY id")
     for state in cursor.fetchall():
         print(state)
     cursor.close()
