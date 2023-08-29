@@ -15,7 +15,7 @@ if __name__ == '__main__':
     session = Session()
 
     states = session.query(State).filter(
-            State.name.ilike('%a')
+            State.name.ilike('%a%')
             )
     for state in states:
         print(f"{state.id}: {state.name}")
